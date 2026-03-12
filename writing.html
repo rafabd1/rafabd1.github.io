@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>writing — sybr1d</title>
+<meta name="description" content="Security research writing — bug bounty, HTB writeups, and offensive tooling by sybr1d.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-line" id="scrollLine"></div>
+
+<div class="site-wrapper">
+
+  <header>
+    <div class="header-top">
+      <a href="index.html" class="logo">
+        <span class="logo-prompt">~$</span> sybr1d<span class="logo-cursor"></span>
+      </a>
+      <nav>
+        <a href="writing.html" class="active">writing</a>
+        <a href="index.html#tools">tools</a>
+        <a href="index.html#cve">cve</a>
+        <a href="about.html">about</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-title">writing</div>
+    <div class="page-hero-desc">
+      Research notes, HTB writeups, and bug bounty tradecraft. Published on Substack.
+    </div>
+  </div>
+
+  <section style="border-bottom: none;">
+    <div class="article-card">
+      <div class="article-card-date">2026-02-25</div>
+      <div class="article-card-title">
+        <a href="https://rafabd1.substack.com/p/prompt-injection-in-bug-bounty" target="_blank" rel="noopener">
+          Prompt Injection in Bug Bounty: Vectors, Techniques, and Real-World Impact
+        </a>
+      </div>
+      <div class="article-card-excerpt">
+        A practical guide to indirect prompt injection — covering issue poisoning, Unicode Tag Character smuggling, and insecure output handling in agentic tools.
+        What bug bounty programs actually accept and what makes a PoC land in triage, not the reject pile.
+      </div>
+      <div class="article-card-footer">
+        <div class="post-tags">
+          <span class="tag">bug-bounty</span>
+          <span class="tag">llm</span>
+          <span class="tag">prompt-injection</span>
+          <span class="tag">agentic-tools</span>
+        </div>
+        <a href="https://rafabd1.substack.com/p/prompt-injection-in-bug-bounty" target="_blank" rel="noopener" class="article-card-link">read on substack →</a>
+      </div>
+    </div>
+
+    <div class="article-card">
+      <div class="article-card-date">2026-02-09</div>
+      <div class="article-card-title">
+        <a href="https://rafabd1.substack.com/p/htb-writeup-1-breaking-a-ruby-cms" target="_blank" rel="noopener">
+          HTB Writeup #1 — Breaking a Ruby CMS via Mass Assignment, Eval Injection &amp; SUID Abuse
+        </a>
+      </div>
+      <div class="article-card-excerpt">
+        Full exploitation chain on an Easy HackTheBox machine running Camaleon CMS 2.9.0.
+        Mass assignment escalation to admin, remote code execution through insecure eval in custom fields,
+        and privilege escalation to root by abusing a SUID-enabled Ruby binary.
+      </div>
+      <div class="article-card-footer">
+        <div class="post-tags">
+          <span class="tag">htb</span>
+          <span class="tag">web</span>
+          <span class="tag">ruby</span>
+          <span class="tag">privesc</span>
+          <span class="tag">suid</span>
+        </div>
+        <a href="https://rafabd1.substack.com/p/htb-writeup-1-breaking-a-ruby-cms" target="_blank" rel="noopener" class="article-card-link">read on substack →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-left">sybr1d — built with obsession, not wordpress</div>
+    <div class="footer-links">
+      <a href="https://github.com/rafabd1" target="_blank" rel="noopener">github</a>
+      <a href="https://rafabd1.substack.com/" target="_blank" rel="noopener">substack</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    document.getElementById('scrollLine').style.width = pct + '%';
+  });
+</script>
+
+</body>
+</html>
