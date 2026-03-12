@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>about — sybr1d</title>
+<meta name="description" content="About sybr1d — offensive security researcher, bug bounty hunter, CVE author.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=IBM+Plex+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scroll-line" id="scrollLine"></div>
+
+<div class="site-wrapper">
+
+  <header>
+    <div class="header-top">
+      <a href="index.html" class="logo">
+        <span class="logo-prompt">~$</span> sybr1d<span class="logo-cursor"></span>
+      </a>
+      <nav>
+        <a href="writing.html">writing</a>
+        <a href="index.html#tools">tools</a>
+        <a href="index.html#cve">cve</a>
+        <a href="about.html" class="active">about</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="page-hero-title">about</div>
+    <div class="page-hero-desc">
+      Offensive security researcher. Bug bounty hunter. Builder of offensive tooling.
+    </div>
+  </div>
+
+  <div class="about-block">
+    <div class="about-block-title">background</div>
+    <div class="about-block-content">
+      <p>
+        Brazilian security professional with a focus on offensive security, vulnerability research, and web application pentesting.
+        5 years of software development background — mobile applications and general-purpose tooling — which informs how I approach code-level vulnerability analysis.
+      </p>
+      <p>
+        In my first year in the field (2025–2026), I've identified 1 CVE and 16+ validated findings across bug bounty programs at companies including AT&amp;T, DoD, GitLab, GitHub, and Mozilla.
+      </p>
+      <p>
+        I build offensive tooling for problems I actually encounter in the wild, not for GitHub stars.
+        Most of my tools are written in Go, with some recent Rust work via ech0.
+      </p>
+    </div>
+  </div>
+
+  <div class="about-block">
+    <div class="about-block-title">certifications &amp; roadmap</div>
+    <div class="about-block-content">
+      <div class="cert-list">
+        <div class="cert-item">
+          <span class="cert-badge planned">planned aug/26</span>
+          <span class="cert-name">eCPPT — eLearnSecurity Certified Professional Penetration Tester</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-badge planned">planned h1/27</span>
+          <span class="cert-name">OSCP — Offensive Security Certified Professional</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-block">
+    <div class="about-block-title">CVEs</div>
+    <div class="about-block-content">
+      <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1282" target="_blank" rel="noopener" class="cve-item" style="margin-top: 0;">
+        <div class="cve-id">CVE-2026-1282</div>
+        <div class="cve-details">
+          <div class="cve-title">GitLab CE/EE — HTML Injection in project label titles (XSS escalation vector)</div>
+          <div class="cve-meta">
+            <span class="severity medium">MEDIUM</span>
+            <span>GitLab 18.6–18.8</span>
+            <span>published 2026-02</span>
+            <span>patched</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="about-block" style="border-bottom: none;">
+    <div class="about-block-title">profiles</div>
+    <div class="profile-grid">
+      <a href="https://github.com/rafabd1" target="_blank" rel="noopener" class="profile-link">
+        <div>
+          <div class="profile-label">github</div>
+          <div>rafabd1</div>
+        </div>
+      </a>
+      <a href="https://x.com/sybr1d_" target="_blank" rel="noopener" class="profile-link">
+        <div>
+          <div class="profile-label">x / twitter</div>
+          <div>sybr1d_</div>
+        </div>
+      </a>
+      <a href="https://rafabd1.substack.com/" target="_blank" rel="noopener" class="profile-link">
+        <div>
+          <div class="profile-label">substack</div>
+          <div>rafabd1</div>
+        </div>
+      </a>
+      <a href="https://app.hackthebox.com/users/2216017" target="_blank" rel="noopener" class="profile-link">
+        <div>
+          <div class="profile-label">hackthebox</div>
+          <div>sybr1d</div>
+        </div>
+      </a>
+      <a href="https://gitlab.com/rafabd" target="_blank" rel="noopener" class="profile-link">
+        <div>
+          <div class="profile-label">gitlab</div>
+          <div>rafabd</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-left">sybr1d — built with obsession, not wordpress</div>
+    <div class="footer-links">
+      <a href="https://github.com/rafabd1" target="_blank" rel="noopener">github</a>
+      <a href="https://rafabd1.substack.com/" target="_blank" rel="noopener">substack</a>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    document.getElementById('scrollLine').style.width = pct + '%';
+  });
+</script>
+
+</body>
+</html>
